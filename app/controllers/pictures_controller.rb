@@ -24,6 +24,17 @@ class PicturesController < ApplicationController
   @pictures = Picture.all
   end
 
+   def destroy
+     puts "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",params.inspect
+     @picture = Picture.find(params[:id])
+
+     @picture.destroy
+     redirect_to :controller => "pictures", :action => 'index'
+
+
+
+
+   end
 
 
 
