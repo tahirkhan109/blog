@@ -1,0 +1,44 @@
+<div id="flash_notices">
+  <% flash.each do |key, value| %>
+      <div class="<%= flash_class(key) %>">
+        <%= value %>
+        <button class="close" data-dismiss="alert">×</button>
+      </div>
+  <% end %>
+</div>
+
+<p>
+  <strong>Title</strong>
+  <%= @post.title %>
+</p>
+<p>
+  <strong>Text</strong>
+  <%= @post.text%>
+</p>
+<%= link_to "Back To Posts", :controller => "posts", :action => "index" %>
+<!--/**=require conquer/bootstrap/css/bootstrap.min.css-->
+<!--/**=require conquer/bootstrap/css/bootstrap-responsive.min.css*/-->
+<!--/**=require conquer/font-awesome/css/font-awesome.css*/-->
+<!--/**=require conquer/css/style.css*/-->
+<!--/**=require conquer/css/style_responsive.css*/-->
+<!--/**=require conquer/css/style_grey.css*/-->
+<!--/**=require conquer/fancybox/source/jquery.fancybox.css*/-->
+<!--/**=require conquer/fancybox/source/jquery.fancybox.css*/-->
+<!--/**=require conquer/gritter/css/jquery.gritter.css*/-->
+<!--/**=require conquer/uniform/css/uniform.default.css*/-->
+<!--/**=require conquer/chosen-bootstrap/chosen/chosen.css*/-->
+<!--/**=require conquer/bootstrap-daterangepicker/daterangepicker.css*/-->
+<!--/**=require conquer/fullcalendar/fullcalendar/bootstrap-fullcalendar.css*/-->
+<!--/**=require conquer/jqvmap/jqvmap/jqvmap.css*/-->
+<!--/**=require shared_app_css*/-->
+<!--/**=require apprise-v2*/-->
+<!--/**=require conquer/bootstrap-datepicker/css/datepicker.css*/-->
+<!--/**=require conquer/bootstrap-timepicker/compiled/timepicker.css*/-->
+<!--/**=require conquer/bootstrap-daterangepicker/daterangepicker.css*/-->
+<!--/**=require conquer/clockface/css/clockface*/-->
+<!--/**=require conquer/data-tables/DT_bootstrap.css*/-->
+<!--/**=require apprise*/-->
+<!--/**=require bootstrap-datetimepicker.min*/-->
+<!--/**=require jquery.treetable.css*/-->
+<!--/**=require screen.css*/-->
+<!--/**/-->

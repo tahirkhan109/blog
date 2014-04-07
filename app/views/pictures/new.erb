@@ -1,0 +1,30 @@
+
+<!--# First line should be-->
+ <%= form_for @picture, :html => { :multipart => true } do |f| %>
+    <% if @picture.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@picture.errors.count, "error") %> prohibited
+            this post from being saved:</h2>
+          <ul>
+            <% @picture.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+ <!--# Then, add the file_field fields.-->
+   <!--<p>-->
+     <!--<b><%#= f.label :attach %> </b><br/>-->
+  <!--<%#= f.file_field :attach %>-->
+   <!--</p>-->
+  <p>
+     <b> <%= f.label :pic %> </b><br/>
+     <%= f.file_field :pic %>
+   </p>
+  <p>
+     <b> <%= f.submit  %> </b><br/>
+
+   </p>
+
+ <% end %>
+<%= link_to "Gallery", :controller => 'pictures',:action => 'index'  %>
