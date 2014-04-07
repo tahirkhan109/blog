@@ -5,9 +5,6 @@ class PicturesController < ApplicationController
 
   def create
   puts "aaaaaaaaaaaaaaaaaaaaaaaaaa",params.inspect
-  #puts "aaaaaaaaaaaaaaaaaaaaaaaaaa",@content_type.inspect
-  #puts "aaaaaaaaaaaaaaaaaaaaaaaaaa",params[:picture][:attach][:pic_content_type].inspect
-  #puts "aaaaaaaaaaaaaaaaaaaaaaaaaa",params[:picture][:attach][:pic_file_size].inspect
   if params[:picture].present?
   @picture = Picture.new(pic_params)
   @picture.save
